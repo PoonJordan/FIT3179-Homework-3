@@ -1,9 +1,9 @@
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Death cause by Air pollution in 2019",
-  "width": 800,
-  "height": 400,
+  "title": "Death cause by Indoor Air pollution in 2019",
+  "width": 1000,
+  "height": 600,
   "projection": {"type": "equalEarth"},
   "data": {
     "url": "data/ne_110m.json",
@@ -28,7 +28,8 @@
     "color": {
       "field": "Deaths_Cause_By_Air_Pollution",
       "type": "quantitative",
-      "scale": {"type": "symlog"}
+      "scale": {"type": "symlog"},
+      "title": "Number of Deaths"
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
